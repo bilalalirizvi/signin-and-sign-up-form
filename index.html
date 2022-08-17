@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth Screen</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="box">
+        <div id="left">
+          <div id="topRightCorner"></div>
+          <h1 id="welcomeBack">Welcome Back!</h1>
+          <h1 id="welcome">Welcome!</h1>
+          <p id="keepConnectedLogin">
+            To keep connected with us please login with your personal info.
+          </p>
+          <p id="keepConnectedSignup">
+            To keep connected with us please signup with your personal info.
+          </p>
+          <button onclick="toggleClass(true)" id="switchToSigninBtn">
+            LOG IN
+          </button>
+          <button onclick="toggleClass(false)" id="switchToSignupBtn">
+            SIGN UP
+          </button>
+          <div id="bottomLeftCorner"></div>
+        </div>
+        <div id="right">
+          <div id="rightBoxWrap">
+            <div class="row">
+              <h1 id="createAccountHeading">Create Account</h1>
+              <h1 id="loginHeading">Log In</h1>
+            </div>
+            <div class="row">
+              <a class="fa fa-facebook"></a>&nbsp;&nbsp;<a
+                class="fa fa-google"
+              ></a
+              >&nbsp;&nbsp;<a class="fa fa-twitter"></a>
+            </div>
+            <!-- <div class="row"> -->
+            <p id="eForReg">or use email for registration</p>
+            <p id="eForLogin">or use email for Login</p>
+            <!-- </div> -->
+            <div class="row" id="userNameInput">
+              <input id="userName" placeholder="User Name" type="text" />
+            </div>
+            <div class="row">
+              <input id="signupEmail" placeholder="Email" type="email" />
+              <input id="loginEmail" placeholder="Email" type="email" />
+            </div>
+            <div class="row">
+              <input id="signupPass" placeholder="Password" type="password" />
+              <input id="loginPass" placeholder="Password" type="password" />
+            </div>
+            <div class="row signupBtnDiv">
+              <button onclick="signup()" id="signupBtn">SIGN UP</button>
+              <button onclick="login()" id="loginBtn">LOG IN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
